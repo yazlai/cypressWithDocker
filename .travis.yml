@@ -3,4 +3,13 @@ services:
   - docker
 script:
   - docker build -t yazlai/cypress01 .
-  - docker images yazlai/cypress01
+  - docker images yazlai/cypress01 
+
+before_deploy:
+  - docker login -u <username> -p <userpassword>
+
+deploy:
+ provider: script
+ script: docker push yazlai/cypress01
+ on:
+  branch: master
