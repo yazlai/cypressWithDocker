@@ -2,5 +2,5 @@ sudo: required
 services: 
   - docker
 script:
-  - docker build -t yazlai/cypress-with-docker-01 .
-  - docker images yazlai/cypress-with-docker-01
+  - docker build -t yazlai/cypress01 .
+  - docker images yazlai/cypress01
