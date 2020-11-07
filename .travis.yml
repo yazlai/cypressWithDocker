@@ -6,7 +6,7 @@ script:
   - docker images yazlai/cypress01 
 
 before_deploy:
-  - docker login -u <username> -p <userpassword>
+  - docker login -u <DOCKER_USERNAME> -p <DOCKER_PASSWORD>
 
 deploy:
  provider: script
