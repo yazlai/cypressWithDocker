@@ -11,5 +11,5 @@ before_deploy:
 deploy:
  provider: script
  script: docker push yazlai/cypress01
- on:
-  branch: master
+on:
+  all_branches: true
